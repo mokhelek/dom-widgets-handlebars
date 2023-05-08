@@ -1,0 +1,21 @@
+.warning{
+    color:orange ; 
+}
+
+.critical{
+    color: red ;
+}
+.normal{
+    color: rgb(26, 26, 26);
+}
+
+.radio-input-error{
+    border: 1px rgb(255, 61, 61) solid ;
+    background-color: rgb(255, 205, 205);
+    color: rgb(255, 47, 47);
+    text-align: center;
+    padding: 0.4rem;
+    border-radius: 25px;
+    margin-bottom: 0.5rem;
+    display: none;
+}
