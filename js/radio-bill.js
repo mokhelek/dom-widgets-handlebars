@@ -23,7 +23,7 @@ function radioAddBtnClicked() {
 
 function displayTemplates() {
     let templatePlaceHolder = document.querySelector(".radioBillTotalsPlaceholder");
-    let template = document.querySelector(".radioBillResultsTemplate").innerHTML;
+    let template = document.querySelector(".radioBillTotalsTemplate").innerHTML;
     let compiledTemplate = Handlebars.compile(template);
 
     let total = {

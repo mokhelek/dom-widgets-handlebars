@@ -194,5 +194,6 @@ function textBill(){
 
         getTotalCall,
         getTotalSMS,
+        resetValues
     }
 }
