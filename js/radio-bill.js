@@ -3,13 +3,15 @@ let radioBillFactory = radioBill();
 function radioAddBtnClicked() {
     let billItem = document.querySelector(".billItemTypeRadio:checked");
     let radioInputError =  document.querySelector(".radio-input-error");
-
+    
     if(billItem != null ){
         if(billItem.value == "call"  ){
             radioBillFactory.makeCall();
+            
         }
         if(billItem.value == "sms"){
             radioBillFactory.makeSMS();
+           
         }
     }else{
         radioInputError.style.display = "block";
@@ -18,10 +20,10 @@ function radioAddBtnClicked() {
         }, 3000);
     }
 
-    displayTemplates();
+    displayRadioBillTemplate();
 }
 
-function displayTemplates() {
+function displayRadioBillTemplate() {
     let templatePlaceHolder = document.querySelector(".radioBillTotalsPlaceholder");
     let template = document.querySelector(".radioBillTotalsTemplate").innerHTML;
     let compiledTemplate = Handlebars.compile(template);

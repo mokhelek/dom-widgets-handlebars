@@ -3,7 +3,6 @@ let textBillFactory = textBill();
 function textAddBtnClicked() {
     let billItem = document.querySelector(".billTypeText").value.toLowerCase().trim() ;
     let textInputError =  document.querySelector("#textInputError");
-
     if(billItem == "call" || billItem == "sms" ){
         if(billItem == "call"  ){
             textBillFactory.billType("call");
@@ -18,10 +17,10 @@ function textAddBtnClicked() {
         }, 3000);
     }
 
-    displayTemplates();
+    displayTextBillTemplate();
 }
 
-function displayTemplates() {
+function displayTextBillTemplate() {
     let templatePlaceHolder = document.querySelector(".textBillTotalsPlaceholder");
     let template = document.querySelector(".textBillTotalsTemplate").innerHTML;
     let compiledTemplate = Handlebars.compile(template);
